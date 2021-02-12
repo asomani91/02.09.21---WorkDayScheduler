@@ -1,14 +1,56 @@
+// 1. display current time //
+
+// 2. display past, present or future time by color // 
+// a. if past time, show gray //
+// b. if present time, show red //
+// c. if future time, show green //
+
+// 3. save text entered in timeblock to local storage //
+// a. saved events stay
+
+
+
+
+
+
+
+
+d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // check for button clicks inside an on click
-$(".saveBtn").on("click", function() {
-// grab my values for time and text
-var value = $(this).siblings(".task").val();
-var time =  $(this).parent().attr("id")
-// save them to local storage
-localStorage.setItem(time, value)
+
+
+$(".saveBtn").on("click", function () {
+    var value = $(this).siblings(".task").val();
+    var time = $(this).parent().attr("id")
+    localStorage.setItem(time, value)
 })
 
-// write a function to updae the hours in the time blocks                             
+
+// write a function to update the hours in the time blocks                             
 // get current time; use moment
 
 // loop over our time blocks: hint - (look up .each)

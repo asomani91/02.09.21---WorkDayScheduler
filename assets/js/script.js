@@ -15,10 +15,20 @@ currentTime.text(d);
 
 
 
-// 2. display past, present or future time by color // 
-// a. if past time, show gray //
-// b. if present time, show red //
-// c. if future time, show green //
+// 2. DISPLAY PAST, PRESENT OR FUTURE BY COLOR // 
+var nine = $("#hour-9")
+var ten = $("#hour-10")
+var eleven = $("#hour-11")
+var twelve = $("#hour-12")
+var one = $("#hour-1")
+var two = $("#hour-2")
+var three = $("#hour-3")
+var four = $("#hour-4")
+var five = $("#hour-5")
+var timeframe = [9,10, 12, 1, 2, 3, 4, 5];
+var divs = [nine, ten, eleven, twelve, one, two, three, four, five];
+
+console.log ("THE HOUR IS" + date.getHours());
 
 
 

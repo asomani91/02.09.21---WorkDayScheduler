@@ -3,7 +3,6 @@ var currentTime = $("current-time")
 
 
 // 1. DISPLAY CURRENT TIME //
-// var check = moment(n.entry.date_entered, 'YYYY/MM/DD');
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 var months = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
@@ -30,9 +29,26 @@ var divs = [nine, ten, eleven, twelve, one, two, three, four, five];
 
 console.log ("THE HOUR IS" + date.getHours());
 
+function color(){
+    $("div.container").each(function(){
+        var time = $(this).children().length;
+        
+        console.log(time);
 
+        for (var i = 0; i <= time; i++) {
+            if (timeframe[i] < date.getHours())
+            divs[i].css("background", "#D3D3D3");
+            else if (timeframe[i] > date.getHours())
+            divs[i].css("background", "green");
+            else
+            divs[i].css("backgroud", "red")
+        }
+    });
+}
 
+$(document).ready(builder);
 
+var blocks = ["hour-9", "hour-10", "hour-11", "hour-12", "hour-1", "hour-2", "hour-3", "hour-4", "hour-5"];
 
 
 // 3. save text entered in timeblock to local storage //

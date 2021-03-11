@@ -1,5 +1,5 @@
 
-var currentTime = $("current-time")
+var currentTime = $("p#current-time")
 
 
 // 1. DISPLAY CURRENT TIME //
@@ -63,12 +63,6 @@ $(".saveBtn").on("click", function () {
     }
 })
 
-
-
-
-
-
-
-
-
-
+for (var i = 0; i <= blocks.length; i++) {
+    divs[i].children(".col-10").text(localStorage.getItem(blocks[i]));
+}

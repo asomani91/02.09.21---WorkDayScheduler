@@ -2,6 +2,9 @@
 // 1. DISPLAY CURRENT TIME //
 
 var currentTime = $("p#current-time")
+
+// moment().format('MMMM Do YYYY, h:mm:ss a'); //
+
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 

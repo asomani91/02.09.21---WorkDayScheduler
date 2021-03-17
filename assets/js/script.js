@@ -25,13 +25,13 @@ const three = $("#hour-3");
 const four = $("#hour-4");
 const five = $("#hour-5");
 
-const timeframe = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+const timeframe = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 const divs = [nine, ten, eleven, twelve, one, two, three, four, five];
 
 console.log("the hours is " + date.getHours());
 
 function builder() {
-    $('div.container').each(function () {
+    $("div.container").each(function () {
 
         var contCount = $(this).children().length;
 
@@ -39,18 +39,18 @@ function builder() {
 
         for (var i = 0; i <= contCount; i++) {
             if (timeframe[i] < date.getHours())
-                divs[i].css('background', '#ff6961');
+                divs[i].css("background", "#ff6961");
             else if (timeframe[i] > date.getHours())
-                divs[i].css('background', '#d3d3d3');
+                divs[i].css("background", "#d3d3d3");
             else
-                divs[i].css('background', '#77dd77');
+                divs[i].css("background", "#77dd77");
         }
     });
 }
 
 $(document).ready(builder);
 
-const blocks = ["hour-9", "hour-10", "hour-11", "hour-12", "hour-1", "hour-2", "hour-3", "hour-4", "hour-5"];
+const blocks = ["hour-9", "hour-10", "hour-11", "hour-12", "hour-13", "hour-14", "hour-15", "hour-16", "hour-17"];
 
 // 3. SAVE TEXT ENTERED IN TIMEBLOCK TO LOCAL STORAGE //
 

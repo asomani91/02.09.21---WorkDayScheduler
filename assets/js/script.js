@@ -39,11 +39,11 @@ function builder() {
 
         for (var i = 0; i <= contCount; i++) {
             if (timeframe[i] < date.getHours())
-                divs[i].css('background', '#D3D3D3');
+                divs[i].css('background', '#ff6961');
             else if (timeframe[i] > date.getHours())
-                divs[i].css('background', 'green');
+                divs[i].css('background', '#d3d3d3');
             else
-                divs[i].css('background', 'red');
+                divs[i].css('background', '#77dd77');
         }
     });
 }
